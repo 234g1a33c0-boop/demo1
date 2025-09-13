@@ -1,0 +1,34 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: turquoise;
+}
+h2{
+    color: blueviolet;
+}
+section{
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    max-width: 400rem;
+    box-shadow: 0 0.2rem 0.6rem rebeccapurple;
+}
+
+input, button{
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+button{
+    background-color: rgb(111, 231, 12);
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    color: rgba(233, 162, 9, 0.973);
+}
+#weather{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
