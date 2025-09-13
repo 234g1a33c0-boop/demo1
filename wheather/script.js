@@ -87,7 +87,6 @@ const cityCoords = {
   "new york": { lat: 40.71, lon: -74.01 }
 };
 
-
 // Event Listener for button
 document.getElementById("fetchBtn").addEventListener("click", () => {
   let city = document.getElementById("cityInput").value.toLowerCase();

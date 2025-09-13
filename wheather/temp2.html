@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Information</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+      background-color: lightblue;
+    }
+    #myInput {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover {
+      background-color: #0056b3;
+      
+    }
+    ul {
+      list-style-type: disc;
+      text-align: left;
+      display: inline-block;
+      margin-top: 20px;
+      padding-left: 20px;
+      min-width: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>This is the Weather Information Page</h1>
+
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    
+  </ul>
+  
+  <br /><br />
+
+  <input type="text" id="myInput" placeholder="Type something here..." />
+  <button id="btn">Add Item</button>
+  <button id="clearBtn">Clear List</button>
+
+  <script>
+    $(document).ready(function () {
+      // Add new item to list
+      $("#btn").click(function () {
+        let inputText = $("#myInput").val().trim();
+        if (inputText) {
+          $("#list").append("<li>" + inputText + "</li>");
+          $("#myInput").val("");
+        }
+      });
+
+      // Clear all list items
+      $("#clearBtn").click(function () {
+        $("#list").empty();
+      });
+      
+    });
+  </script>
+
+</body>
+</html>

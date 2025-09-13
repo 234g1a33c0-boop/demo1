@@ -1,0 +1,48 @@
+<html>
+    <head>
+       
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> weather information  </title>
+       <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          text-align: center;
+            background-color: lightblue;    
+        }
+        </style>
+    </head>
+    <body>
+        <h1>
+        <h1>
+            this is weather information page
+            </h1>
+            <br>
+            </br>
+            <ul id="list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <input type="text" id="myInput" placeholder="Type something here   ...">
+            <button id="btn">Click Me</button>
+            <script>
+                $(document).ready(function(){
+                    $("#btn").click(function(){
+
+                        let  inputText = $("#myInput").val();
+                        if(inputText) {
+                           $("#list").append("<li>" + inputText + "</li>");
+                           $("#myInput").val(""); 
+                        }
+                    });
+                    });
+            </script>
+
+                
+
+
+
+    </body>
+</html>
